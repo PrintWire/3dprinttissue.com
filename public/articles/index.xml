@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bioprinting &amp; Tissue Engineering Research on 3D Print Tissue</title><link>https://3dprinttissue.com/articles/</link><description>Recent content in Bioprinting &amp; Tissue Engineering Research on 3D Print Tissue</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://3dprinttissue.com/articles/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bioprinting &amp; Tissue Engineering Research on 3D Print Tissue</title>
+    <link>https://3dprinttissue.com/articles/</link>
+    <description>Recent content in Bioprinting &amp; Tissue Engineering Research on 3D Print Tissue</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Jun 2026 06:01:54 -0600</lastBuildDate>
+    <atom:link href="https://3dprinttissue.com/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shape Memory Biocompatible 3D Printing: Photopolymer Resins for Smart Medical Devices</title>
+      <link>https://3dprinttissue.com/articles/shape-memory-biocompatible-3d-printing/</link>
+      <pubDate>Sat, 27 Jun 2026 06:01:54 -0600</pubDate>
+      <guid>https://3dprinttissue.com/articles/shape-memory-biocompatible-3d-printing/</guid>
+      <description>&lt;p&gt;The intersection of shape memory biocompatible 3D printing and implantable medical devices represents one of the more technically demanding frontiers in additive manufacturing. Shape memory photopolymer resins — including systems like DEGRES INX — can be printed into a permanent geometry, mechanically programmed into a temporary shape, and then actuated back to their original form by a thermal stimulus. When that actuation temperature is tuned to fall near 37°C, the human body becomes the trigger. That property opens real clinical possibilities: self-deploying stents, shape-adapting soft implants, and minimally invasive fixation devices that expand after insertion.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Volumetric Bioprinting Holographic 3D Printed Organs Vascular Networks Cell-Compatible: EPFL&#39;s 2026 Breakthrough</title>
+      <link>https://3dprinttissue.com/articles/volumetric-bioprinting-holographic-3d-printed-organs-vascular-networks-cell-compatible/</link>
+      <pubDate>Tue, 23 Jun 2026 06:03:31 -0600</pubDate>
+      <guid>https://3dprinttissue.com/articles/volumetric-bioprinting-holographic-3d-printed-organs-vascular-networks-cell-compatible/</guid>
+      <description>&lt;p&gt;The fundamental obstacle blocking lab-grown organs from clinical use has never been cell biology — it has been plumbing. Building the intricate, hierarchical vascular networks that keep cells alive inside thick tissue constructs has resisted every conventional fabrication approach. EPFL&amp;rsquo;s June 2026 demonstration of &lt;strong&gt;volumetric bioprinting holographic 3D printed organs vascular networks cell-compatible&lt;/strong&gt; geometries represents a meaningful technical advance toward solving that problem, using light rather than nozzles to sculpt living tissue in three dimensions simultaneously.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Production-Ready Dental 3D Printing: From Titanium Implants to 24-Hour Custom Aligners</title>
+      <link>https://3dprinttissue.com/articles/3d-printed-dental-implants-surgical-guides-orthodontic-aligners/</link>
+      <pubDate>Mon, 22 Jun 2026 06:04:58 -0600</pubDate>
+      <guid>https://3dprinttissue.com/articles/3d-printed-dental-implants-surgical-guides-orthodontic-aligners/</guid>
+      <description>&lt;h1 id=&#34;production-ready-dental-3d-printing-from-titanium-implants-to-24-hour-custom-aligners&#34;&gt;Production-Ready Dental 3D Printing: From Titanium Implants to 24-Hour Custom Aligners&lt;/h1&gt;&#xA;&lt;p&gt;Dental medicine has become one of the highest-volume clinical applications of additive manufacturing. &lt;strong&gt;3D printed dental implants, surgical guides, and orthodontic aligners&lt;/strong&gt; now move through labs and chairside units at scale — not as experimental prototypes, but as cleared medical devices integrated into everyday practice. This article breaks down the three core application categories, the materials and processes behind each, and where the workflows still have room to mature.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,1 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>https://3dprinttissue.com/</loc></url><url><loc>https://3dprinttissue.com/about/</loc></url><url><loc>https://3dprinttissue.com/advertise/</loc></url><url><loc>https://3dprinttissue.com/articles/</loc></url><url><loc>https://3dprinttissue.com/services/</loc></url><url><loc>https://3dprinttissue.com/categories/</loc></url><url><loc>https://3dprinttissue.com/contact/</loc></url><url><loc>https://3dprinttissue.com/tags/</loc></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://3dprinttissue.com/</loc>
+    <lastmod>2026-06-27T06:01:54-06:00</lastmod>
+  </url><url>
+    <loc>https://3dprinttissue.com/articles/</loc>
+    <lastmod>2026-06-27T06:01:54-06:00</lastmod>
+  </url><url>
+    <loc>https://3dprinttissue.com/articles/shape-memory-biocompatible-3d-printing/</loc>
+    <lastmod>2026-06-27T06:01:54-06:00</lastmod>
+  </url><url>
+    <loc>https://3dprinttissue.com/articles/volumetric-bioprinting-holographic-3d-printed-organs-vascular-networks-cell-compatible/</loc>
+    <lastmod>2026-06-23T06:03:31-06:00</lastmod>
+  </url><url>
+    <loc>https://3dprinttissue.com/articles/3d-printed-dental-implants-surgical-guides-orthodontic-aligners/</loc>
+    <lastmod>2026-06-22T06:04:58-06:00</lastmod>
+  </url><url>
+    <loc>https://3dprinttissue.com/viewer/</loc>
+  </url><url>
+    <loc>https://3dprinttissue.com/about/</loc>
+  </url><url>
+    <loc>https://3dprinttissue.com/advertise/</loc>
+  </url><url>
+    <loc>https://3dprinttissue.com/services/</loc>
+  </url><url>
+    <loc>https://3dprinttissue.com/categories/</loc>
+  </url><url>
+    <loc>https://3dprinttissue.com/contact/</loc>
+  </url><url>
+    <loc>https://3dprinttissue.com/tags/</loc>
+  </url>
+</urlset>

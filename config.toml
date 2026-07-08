@@ -1,10 +1,19 @@
 baseURL = "https://3dprinttissue.com/"
 languageCode = "en-us"
 title = "3D Print Tissue"
-theme = "printwire"
+
+[outputs]
+  home = ["HTML", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 # All single-value params MUST come before [[params.*]] array tables
 [params]
+siteName      = "3D Print Tissue"
+logoHtml      = '3D&nbsp;PRINT&nbsp;<span class="ed-logo-accent">TISSUE</span>'
 tagline       = "Building Tomorrow's Medicine, Today."
 description   = "3D Print Tissue — precision bioprinting of functional tissue constructs for regenerative medicine, pharmaceutical research, and the future of organ transplantation. Skin, cartilage, vascular, and neural models from custom bioinks."
 keywords      = "3D bioprinting, tissue engineering, bioink, regenerative medicine, skin equivalents, cartilage scaffold, vascularized constructs, organ-on-a-chip, GelMA, collagen bioprinting"

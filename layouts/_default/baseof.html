@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Peer-reviewed research, clinical trials, and industry news covering 3D bioprinting, regenerative medicine, and tissue engineering.">
-  <meta property="og:title" content="Bioprinting &amp; Tissue Engineering Research | 3D Print Tissue">
-  <meta property="og:description" content="Peer-reviewed research, clinical trials, and industry news covering 3D bioprinting, regenerative medicine, and tissue engineering.">
+  <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}">
+  <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <meta property="og:type" content="website">
-  <title>Bioprinting &amp; Tissue Engineering Research | 3D Print Tissue</title>
+  <title>{{ .Title }} | {{ .Site.Title }}</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -34,7 +34,7 @@
 <header class="ed-header">
   <div class="ed-header-inner">
     <a href="/" class="ed-logo">
-      3D&nbsp;PRINT&nbsp;<span class="ed-logo-accent">TISSUE</span>
+      {{ .Site.Params.logoHtml | default .Site.Params.siteName | safeHTML }}
     </a>
     <button class="ed-nav-toggle" aria-label="Menu" onclick="document.querySelector('.ed-nav').classList.toggle('open')">&#9776;</button>
     <nav class="ed-nav">
@@ -50,61 +50,18 @@
 </header>
 
 <div class="ed-breadcrumbs">
-  <a href="/">Home</a> <span>/</span> Articles
+  <a href="/">Home</a> <span>/</span> {{ block "breadcrumb" . }}Articles{{ end }}
 </div>
 
 <main>
-  
-<div class="ed-content">
-  <div class="ed-section">
-    <div class="ed-section-label">
-      All Articles
-      <a href="/">Back to News &rarr;</a>
-    </div>
-
-    
-    <div class="ed-card-grid">
-      
-      <article class="ed-card">
-        <div class="ed-card-body">
-          
-          <div class="ed-card-meta">Jun 27, 2026</div>
-          <h3><a href="/articles/shape-memory-biocompatible-3d-printing/">Shape Memory Biocompatible 3D Printing: Photopolymer Resins for Smart Medical Devices</a></h3>
-          <p class="ed-card-excerpt"><p>The intersection of shape memory biocompatible 3D printing and implantable medical devices represents one of the more technically demanding frontiers in …</p></p>
-        </div>
-      </article>
-      
-      <article class="ed-card">
-        <div class="ed-card-body">
-          
-          <div class="ed-card-meta">Jun 23, 2026</div>
-          <h3><a href="/articles/volumetric-bioprinting-holographic-3d-printed-organs-vascular-networks-cell-compatible/">Volumetric Bioprinting Holographic 3D Printed Organs Vascular Networks Cell-Compatible: EPFL&#39;s 2026 Breakthrough</a></h3>
-          <p class="ed-card-excerpt"><p>The fundamental obstacle blocking lab-grown organs from clinical use has never been cell biology — it has been plumbing. Building the intricate, hierarchical …</p></p>
-        </div>
-      </article>
-      
-      <article class="ed-card">
-        <div class="ed-card-body">
-          
-          <div class="ed-card-meta">Jun 22, 2026</div>
-          <h3><a href="/articles/3d-printed-dental-implants-surgical-guides-orthodontic-aligners/">Production-Ready Dental 3D Printing: From Titanium Implants to 24-Hour Custom Aligners</a></h3>
-          <p class="ed-card-excerpt"><h1 id="production-ready-dental-3d-printing-from-titanium-implants-to-24-hour-custom-aligners">Production-Ready Dental 3D Printing: From Titanium Implants to 24-Hour Custom Aligners</h1>
-<p>Dental medicine has become one of the highest-volume clinical …</p></p>
-        </div>
-      </article>
-      
-    </div>
-    
-  </div>
-</div>
-
+  {{ block "main" . }}{{ end }}
 </main>
 
 <footer class="ed-footer">
   <div class="ed-footer-inner">
     <div class="ed-footer-brand">
-      <div class="ed-logo">3D&nbsp;PRINT&nbsp;<span class="ed-logo-accent">TISSUE</span></div>
-      <p>3D Print Tissue — precision bioprinting of functional tissue constructs for regenerative medicine, pharmaceutical research, and the future of organ transplantation. Skin, cartilage, vascular, and neural models from custom bioinks. Part of the PrintWire network.</p>
+      <div class="ed-logo">{{ .Site.Params.logoHtml | default .Site.Params.siteName | safeHTML }}</div>
+      <p>{{ .Site.Params.description }} Part of the PrintWire network.</p>
     </div>
     <div>
       <h4>Navigation</h4>
@@ -135,7 +92,7 @@
     </div>
   </div>
   <div class="ed-footer-bottom">
-    <div>&copy; 2026 3D Print Tissue. Part of the <a href="https://3dprint.space">PrintWire</a> network.</div>
+    <div>&copy; 2026 {{ .Site.Params.siteName }}. Part of the <a href="https://3dprint.space">PrintWire</a> network.</div>
     <div>
       <a href="#">Privacy</a>
       <a href="#">Terms</a>
@@ -144,7 +101,7 @@
 </footer>
 
 <script>
-
+// Theme toggle
 (function() {
   var btn = document.getElementById('themeToggle');
   var root = document.documentElement;
