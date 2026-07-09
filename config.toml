@@ -19,7 +19,7 @@ description   = "3D Print Tissue — precision bioprinting of functional tissue 
 keywords      = "3D bioprinting, tissue engineering, bioink, regenerative medicine, skin equivalents, cartilage scaffold, vascularized constructs, organ-on-a-chip, GelMA, collagen bioprinting"
 logoEmoji     = "🧬"
 contactEmail  = "maxdavisgroup@gmail.com"
-ogImage       = "images/01_hero_bioprinter.png"
+ogImage       = "/images/04_vascularized_heart.png"
 footerServicesLabel = "Services"
 
 colorPrimary      = "#0e7490"
