@@ -102,36 +102,10 @@
     <!-- Analysis & Deep Dives -->
     <div class="ed-section-label">
       Analysis &amp; Deep Dives
-      <a href="#">View All &rarr;</a>
+      <a href="/articles/">View All &rarr;</a>
     </div>
-    <div class="ed-list">
-      <article class="ed-list-item">
-        <img src="images/02_bioprinted_skin.png" alt="Bioprinted liver tissue">
-        <div>
-          <span class="ed-badge">Tissue Engineering</span>
-          <div class="ed-card-meta">June 24, 2026 · 9 min read</div>
-          <h3><a href="#">The Vascularization Problem: Why Printed Organs Still Can't Get Blood</a></h3>
-          <p class="ed-card-excerpt">Perfusable microvasculature is the last hard barrier between bioprinted constructs and implantable organs. Here's where the field actually stands.</p>
-        </div>
-      </article>
-      <article class="ed-list-item">
-        <img src="images/03_bioprinted_cartilage.png" alt="Cartilage scaffold">
-        <div>
-          <span class="ed-badge">Materials</span>
-          <div class="ed-card-meta">June 20, 2026 · 7 min read</div>
-          <h3><a href="#">GelMA vs. Collagen-Alginate: Choosing a Bioink for Perfusable Tissue</a></h3>
-          <p class="ed-card-excerpt">Printability, cell viability, and post-print stiffness diverge sharply between the leading bioink systems. A tissue engineer's comparison.</p>
-        </div>
-      </article>
-      <article class="ed-list-item">
-        <img src="images/04_cell_laden.png" alt="Bioprinted cornea model">
-        <div>
-          <span class="ed-badge">Clinical</span>
-          <div class="ed-card-meta">June 18, 2026 · 10 min read</div>
-          <h3><a href="#">From Bench to Trial: The Regulatory Path for a 3D-Printed Implant</a></h3>
-          <p class="ed-card-excerpt">What it actually takes to move a bioprinted construct through GMP, preclinical, and Phase I — and where most programs stall.</p>
-        </div>
-      </article>
+    <div class="ed-list" id="pwDeepDives">
+      <div style="padding:1.5rem;color:var(--text-faint);">Loading analysis…</div>
     </div>
 
     <!-- Applications -->
@@ -457,6 +431,31 @@ document.querySelector('.ed-nav-toggle')?.addEventListener('click', () => {
       ? top.map(card).join('')
       : '<div style="grid-column:1/-1;text-align:center;padding:2rem;color:var(--text-faint);">Unable to load news.</div>';
   }
+})();
+
+// -- Analysis & Deep Dives: PrintWire catalog in list format --
+(function(){
+  var box = document.getElementById('pwDeepDives');
+  if (!box) return;
+  function esc(s){var d=document.createElement('div');d.appendChild(document.createTextNode(s==null?'':s));return d.innerHTML;}
+  var empty = '<div style="padding:1.5rem;color:var(--text-faint);">In-depth analysis and deep dives are on the way — check back soon.</div>';
+  fetch('network.json',{cache:'no-store'})
+    .then(function(r){ return r.ok ? r.json() : []; })
+    .then(function(items){
+      items = (items || []).slice();
+      items.sort(function(a,b){ return (b.iso||'').localeCompare(a.iso||''); });
+      if (!items.length){ box.innerHTML = empty; return; }
+      box.innerHTML = items.slice(0,8).map(function(a){
+        var img = a.img ? '<img src="'+esc(a.img)+'" alt="" loading="lazy">' : '';
+        var meta = esc(a.date||'') + (a.origin ? ' · '+esc(a.origin) : '');
+        return '<article class="ed-list-item">'+img+'<div>'+
+          '<div class="ed-card-meta">'+meta+'</div>'+
+          '<h3><a href="'+esc(a.url)+'">'+esc(a.title)+'</a></h3>'+
+          '<p class="ed-card-excerpt">'+esc(a.summary||'')+'</p>'+
+          '</div></article>';
+      }).join('');
+    })
+    .catch(function(){ box.innerHTML = empty; });
 })();
 </script>
 </body>
