@@ -1,8 +1,8 @@
 ---
-title: "Production-Ready Dental 3D Printing: From Titanium Implants to Same-Day Custom Aligners"
+title: "Dental 3D Printing: Titanium Implants, Surgical Guides and Same-Day Aligners"
 date: 2026-06-22T06:04:58-06:00
 draft: false
-description: "How 3D printed dental implants, surgical guides, and orthodontic aligners are reshaping clinical workflows and patient outcomes."
+description: "What published sources say about 3D printed dental implants, surgical guides, and orthodontic aligners: materials, workflows, regulatory classification and the evidence so far."
 keywords: ["3D printed dental implants surgical guides orthodontic aligners", "DMLS titanium dental implants", "clear aligner 3D printing workflow"]
 ---
 **3D printed dental implants, surgical guides, and orthodontic aligners** are three distinct uses of additive manufacturing in dentistry, each with its own materials, process and regulatory position. This article covers what published sources say about each one, and where the evidence is still thin.

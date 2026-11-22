@@ -2,7 +2,7 @@
 title: "Breaking the 200µm Barrier: Vascular Bioprinting Strategies for Implantable Organs"
 date: 2026-06-25T06:01:30-06:00
 draft: false
-description: "How vascular bioprinting is tackling the 200µm necrosis limit through sacrificial templating, coaxial extrusion, and multi-cell printing to enable tissue vascularization at organ scale."
+description: "How vascular bioprinting is tackling the 200µm necrosis limit through sacrificial templating, coaxial extrusion, and multi-cell printing, and where tissue vascularization for organ printing stands."
 image: /images/articles/vascular-bioprinting-tissue-vascularization-organ-printing.jpg
 keywords: ["vascular bioprinting, tissue vascularization, organ printing", "sacrificial templating bioprinting", "coaxial extrusion hollow channels"]
 ---
