@@ -15,7 +15,7 @@ title = "3D Print Tissue"
 siteName      = "3D Print Tissue"
 logoHtml      = '3D&nbsp;PRINT&nbsp;<span class="ed-logo-accent">TISSUE</span>'
 tagline       = "Building Tomorrow's Medicine, Today."
-description   = "3D Print Tissue — precision bioprinting of functional tissue constructs for regenerative medicine, pharmaceutical research, and the future of organ transplantation. Skin, cartilage, vascular, and neural models from custom bioinks."
+description   = "3D Print Tissue is a PrintWire network site about tissue bioprinting. PrintWire passes quote requests to specialised manufacturers and returns pricing. PrintWire does not manufacture parts itself."
 keywords      = "3D bioprinting, tissue engineering, bioink, regenerative medicine, skin equivalents, cartilage scaffold, vascularized constructs, organ-on-a-chip, GelMA, collagen bioprinting"
 logoEmoji     = "🧬"
 contactEmail  = "maxdavisgroup@gmail.com"
