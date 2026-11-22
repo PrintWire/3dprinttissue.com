@@ -30,9 +30,6 @@
     <nav class="ed-nav">
       <a href="index.html" class="active">News</a>
       <a href="/articles/">Research</a>
-      <a href="#suppliers">Suppliers</a>
-      <a href="#suppliers">Materials</a>
-      <a href="#suppliers">Clinical</a>
       <a href="about.html">About</a>
     </nav>
     <button class="ed-theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">&#9728;</button>
@@ -61,25 +58,6 @@
       </div>
     </article>
 
-    <!-- Stats Bar -->
-    <div class="ed-stats">
-      <div class="ed-stat">
-        <div class="ed-stat-value">200µm</div>
-        <div class="ed-stat-label">Vascular Resolution</div>
-      </div>
-      <div class="ed-stat">
-        <div class="ed-stat-value">24hr</div>
-        <div class="ed-stat-label">Scan to Device</div>
-      </div>
-      <div class="ed-stat">
-        <div class="ed-stat-value">99%</div>
-        <div class="ed-stat-label">Cell Viability</div>
-      </div>
-      <div class="ed-stat">
-        <div class="ed-stat-value">79+</div>
-        <div class="ed-stat-label">Active Suppliers</div>
-      </div>
-    </div>
 
     <!-- PrintWire Originals — network-wide originals (featured) -->
     <div class="ed-section-label" style="border-left:3px solid var(--accent);padding-left:0.6rem;">
@@ -93,7 +71,7 @@
     <!-- Latest News — PrintWire + industry (RSS) -->
     <div class="ed-section-label">
       Latest Research News
-      <a href="#">View All &rarr;</a>
+      
     </div>
     <div class="ed-card-grid" id="newsGrid">
       <div style="grid-column: 1/-1; text-align:center; padding:2rem; color:var(--text-faint);">Loading latest news…</div>
@@ -113,123 +91,41 @@
       Applications We Cover
     </div>
     <div class="ed-card-grid" style="grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2.5rem;">
-      <a href="#" class="ed-card" style="text-align:center;">
+      <div class="ed-card" style="text-align:center;">
         <img class="ed-card-img" src="images/05_bioprinted_vascular.png" alt="Organ Models">
         <div class="ed-card-body"><h3>Organ Models</h3></div>
-      </a>
-      <a href="#" class="ed-card" style="text-align:center;">
+      </div>
+      <div class="ed-card" style="text-align:center;">
         <img class="ed-card-img" src="images/06_bioprinting_nozzle.png" alt="Skin & Grafts">
         <div class="ed-card-body"><h3>Skin &amp; Grafts</h3></div>
-      </a>
-      <a href="#" class="ed-card" style="text-align:center;">
+      </div>
+      <div class="ed-card" style="text-align:center;">
         <img class="ed-card-img" src="images/07_bioprinted_tissue.png" alt="Cartilage">
         <div class="ed-card-body"><h3>Cartilage</h3></div>
-      </a>
-      <a href="#" class="ed-card" style="text-align:center;">
+      </div>
+      <div class="ed-card" style="text-align:center;">
         <img class="ed-card-img" src="images/08_bioprinted_liver.png" alt="Dental">
         <div class="ed-card-body"><h3>Dental</h3></div>
-      </a>
-      <a href="#" class="ed-card" style="text-align:center;">
+      </div>
+      <div class="ed-card" style="text-align:center;">
         <img class="ed-card-img" src="images/01_hero_bioprinter.png" alt="Research">
         <div class="ed-card-body"><h3>Research</h3></div>
-      </a>
-      <a href="#" class="ed-card" style="text-align:center;">
+      </div>
+      <div class="ed-card" style="text-align:center;">
         <img class="ed-card-img" src="images/02_bioprinted_skin.png" alt="Bioprinters">
         <div class="ed-card-body"><h3>Bioprinters</h3></div>
-      </a>
+      </div>
     </div>
 
-    <!-- Load More -->
-    <div class="ed-load-more">
-      <button>Load More Articles</button>
-    </div>
 
   </div>
 
   <!-- ── Sidebar ─────────────────────────────── -->
   <aside class="ed-sidebar">
 
-    <!-- Newsletter -->
-    <div class="ed-sidebar-block ed-newsletter">
-      <h4>Newsletter</h4>
-      <p>Bioprinting breakthroughs, clinical-trial milestones, and tissue-engineering research — delivered monthly. No spam.</p>
-      <form action="https://api.web3forms.com/submit" method="POST" onsubmit="this.querySelector('button').textContent='Subscribed!';this.querySelector('button').disabled=true;">
-        <input type="hidden" name="access_key" value="6f33053b-6d08-414b-9615-665f88c98da8">
-        <input type="hidden" name="subject" value="Newsletter Signup — 3dprinttissue.com">
-        <input type="hidden" name="from_name" value="Newsletter Signup">
-        <input type="email" name="email" placeholder="your@email.com" required>
-        <button type="submit">Subscribe</button>
-      </form>
-    </div>
 
-    <!-- Suppliers & Connections -->
-    <div class="ed-sidebar-block" id="suppliers">
-      <h4>Suppliers &amp; Connections</h4>
-      <div class="ed-popular-item">
-        <div>
-          <h3><a href="#">Bioprinters &amp; Systems</a></h3>
-          <div class="ed-popular-meta">Extrusion, DLP &amp; volumetric bioprinters · 16 suppliers</div>
-        </div>
-      </div>
-      <div class="ed-popular-item">
-        <div>
-          <h3><a href="#">Bioinks &amp; Materials</a></h3>
-          <div class="ed-popular-meta">Collagen, alginate, GelMA, biocompatible resins · 22 suppliers</div>
-        </div>
-      </div>
-      <div class="ed-popular-item">
-        <div>
-          <h3><a href="#">Research Labs</a></h3>
-          <div class="ed-popular-meta">Contract tissue-engineering &amp; bioprinting labs · 27 listed</div>
-        </div>
-      </div>
-      <div class="ed-popular-item">
-        <div>
-          <h3><a href="#">Clinical Partners</a></h3>
-          <div class="ed-popular-meta">Regulatory, GMP &amp; clinical-trial partners · 14 listed</div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Most Read -->
-    <div class="ed-sidebar-block">
-      <h4>Most Read</h4>
-      <div class="ed-popular-item">
-        <span class="ed-popular-num">1</span>
-        <div>
-          <h3><a href="#">Volumetric Bioprinting Holographic Organs Hit Cell-Compatible Milestone</a></h3>
-          <div class="ed-popular-meta">10.8K reads</div>
-        </div>
-      </div>
-      <div class="ed-popular-item">
-        <span class="ed-popular-num">2</span>
-        <div>
-          <h3><a href="#">Production-Ready Dental 3D Printing: Titanium Implants to 24-Hour Aligners</a></h3>
-          <div class="ed-popular-meta">8.9K reads</div>
-        </div>
-      </div>
-      <div class="ed-popular-item">
-        <span class="ed-popular-num">3</span>
-        <div>
-          <h3><a href="#">Shape-Memory Biocompatible Resins for Smart Medical Devices</a></h3>
-          <div class="ed-popular-meta">7.1K reads</div>
-        </div>
-      </div>
-      <div class="ed-popular-item">
-        <span class="ed-popular-num">4</span>
-        <div>
-          <h3><a href="#">First 3D-Printed Vascular Graft Clears Phase I Clinical Trial</a></h3>
-          <div class="ed-popular-meta">6.4K reads</div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Ad Placeholder -->
-    <div class="ed-sidebar-block" style="text-align:center; color: var(--text-faint); font-size: 0.75rem; padding: 2.5rem 1rem;">
-      <div style="border: 1px dashed var(--border); border-radius: 4px; padding: 2rem 1rem;">
-        Ad Space<br>300×250
-      </div>
-    </div>
 
     <!-- Network Links -->
     <div class="ed-sidebar-block">
@@ -246,12 +142,6 @@
       </div>
     </div>
 
-    <!-- Project CTA -->
-    <div class="ed-sidebar-block" style="background: linear-gradient(135deg, rgba(14,154,167,0.10), rgba(14,154,167,0.04)); border-color: var(--border-accent);">
-      <h4 style="color: var(--accent);">List Your Lab</h4>
-      <p style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 1rem; line-height: 1.5;">Bioprinting service, bioink supplier, or research lab? Get listed in the directory.</p>
-      <a href="contact.html" style="display:block;text-align:center;padding:0.65rem;background:var(--accent);border-radius:4px;color:#fff;font-weight:600;font-size:0.8rem;transition:background 0.25s;" onmouseover="this.style.background='var(--accent-dark)'" onmouseout="this.style.background='var(--accent)'">Get in Touch</a>
-    </div>
 
   </aside>
 </div>
@@ -275,27 +165,27 @@
     <div>
       <h4>Coverage</h4>
       <ul>
-        <li><a href="#">Bioprinting</a></li>
-        <li><a href="#">Tissue Engineering</a></li>
-        <li><a href="#">Dental</a></li>
+        <li>Bioprinting</li>
+        <li>Tissue Engineering</li>
+        <li>Dental</li>
         <li><a href="advertise.html">Advertise With Us</a></li>
       </ul>
     </div>
     <div>
       <h4>Applications</h4>
       <ul>
-        <li><a href="#">Organ Models</a></li>
-        <li><a href="#">Skin &amp; Grafts</a></li>
-        <li><a href="#">Cartilage</a></li>
-        <li><a href="#">Dental</a></li>
+        <li>Organ Models</li>
+        <li>Skin &amp; Grafts</li>
+        <li>Cartilage</li>
+        <li>Dental</li>
       </ul>
     </div>
   </div>
   <div class="ed-footer-bottom">
     <span>&copy; 2026 3D Print Tissue. Part of the <a href="https://3dprint.space" style="color:var(--accent);">PrintWire</a> network.</span>
     <span>
-      <a href="#">Privacy</a>
-      <a href="#">Terms</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/terms.html">Terms</a>
     </span>
   </div>
 </footer>
